@@ -7,7 +7,6 @@ import { FormatResult } from './Models/Result.model';
 
 @Controller('v2/places')
 export class PlacesController {
-
   @Post()
   @UseInterceptors(new ValidatorInterceptor(new PlacesContracts()))
   @ApiBody({ type: Places })
