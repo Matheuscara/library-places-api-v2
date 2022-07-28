@@ -1,11 +1,10 @@
-import { HttpModule } from '@nestjs/axios';
 import { Module } from '@nestjs/common';
 import { PlacesModule } from './places/places.module';
 // import { Places } from './places';
 import { PlacesProdider } from './places/Providers/places.prodider';
 
 @Module({
-  imports: [PlacesModule, HttpModule],
+  imports: [PlacesModule],
   controllers: [],
   providers: [PlacesProdider],
 })
